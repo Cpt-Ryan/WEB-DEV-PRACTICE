@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="https://refrigerationu.com/" target="_blank">My Work</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+            <li><a href="dnd.html">DND</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Welcome to My Website</h1>
+        <p>You are not safe here</p>
+    </header>
+    <div class="layout">
+        <aside class="sidebar">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="https://refrigerationu.com/" target="_blank">My Work</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="dnd.html">DND</a></li>
+            </ul>
+            <h2>Recent Projects</h2>
+            <ul>
+                <li><a href="https://github.com/Cpt-Ryan/NL-QR-CODER" target="_blank">NL-QR-CODER</a></li>
+                <li><a href="https://github.com/Cpt-Ryan/NL-CAD-PACKET-BUILDER" target="_blank">NL-CAD-PACKET-BUILDER </a></li>
+                <li><a href="https://github.com/Cpt-Ryan/Web-DEV-Practice" target="_blank">WEB-DEV-PRACTICE</a></li>
+            </ul>
+            <img src="images/chaos.gif" alt="Chaos GIF" class="sidebar-image">
+        </aside>
+        <main>
+            <section class="flex-container">
+                <div>
+                    <h2>Background</h2>
+                    <p>Over the years, I’ve fumbled my way through countless web development projects, allegedly honing my skills in HTML, CSS, and JavaScript. I seem to enjoy new challenges and the never-ending rabbit hole of the latest web technologies—because clearly, I have a knack for chaos. Dive in and witness the delightful disaster of my coding escapades!</p>
+                </div>
+                <img src="images/Badger.gif" alt="Biography Image" class="featured-image">
+            </section>
+            <section>
+                <h2>My Work</h2>
+                <ul class="projects">
+                    <li>
+                        <h3>Project 1: NL-QR-CODER</h3>
+                        <p>A tool to generate QR codes for various applications, providing an easy way to encode and share information.</p>
+                    </li>
+                    <li>
+                        <h3>Project 2: NL-CAD-PACKET-BUILDER</h3>
+                        <p>A CAD packet builder that helps streamline the creation and management of CAD files for engineering projects.</p>
+                    </li>
+                    <li>
+                        <h3>Project 3: THIS WEBSITE</h3>
+                        <p>This personal website showcases my skills, projects, and provides tutorials for web development.</p>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h2>Quotes</h2>
+                <div class="quotes">
+                    <div class="quote">
+                        <p>"Blood for the Blood God! Skulls for the Skull Throne! Milk for the Khorne Flakes!"</p>
+                        <p>- Khorne Berserker with a balanced breakfast.</p>
+                    </div>
+                    <div class="quote">
+                        <p>"In the grim darkness of the far future, there is only paperwork."</p>
+                        <p>- Adeptus Administratum</p>
+                    </div>
+                    <div class="quote">
+                        <p>"We fight for the Emperor, we die for the Emperor, we live for the Emperor... just wish he’d give us a day off."</p>
+                        <p>- Overworked Guardsman</p>
+                    </div>
+                </div>
+            </section>
+            <section id="contact">
+                <h2>Contact Me</h2>
+                <form id="contactForm" action="submit_page.php" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Your Message"></textarea>
+                    <input type="button" id="submitBtn" value="Submit">
+                </form>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <p>&copy; 2024 Code Monkey</p>
+    </footer>
+
+    <!-- Popup Container -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <img src="images/Think.gif" alt="Popup Image" class="popup-image">
+            <p>Why would I want to talk to you?</p>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>

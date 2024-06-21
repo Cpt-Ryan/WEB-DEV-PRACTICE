@@ -1,0 +1,14 @@
+/* Inherit the base styles from styles.css */
+@import url('styles.css');
+
+/* Additional styling for the DND page */
+.carousel-container {
+    float: left;
+    width: 50%;
+    margin-right: 20px;
+    max-width: 600px; /* Ensure this matches the intended size */
+}
+
+.text-content {
+    overflow: hidden; /* Ensure content wraps correctly around the floated carousel */
+}

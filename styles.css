@@ -1,0 +1,507 @@
+/* Reset default margins and padding */
+body, h1, h2, h3, p, ul, li, form, input, textarea, footer {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    background: #000824; /* Darker navy background */
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Enhanced header styling with background image and overlay */
+header {
+    background: linear-gradient(to bottom right, #003366, #000000), url('images/header-background.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 80px 20px 20px;
+    text-align: center;
+    margin-top: 40px; /* Space for fixed nav bar */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+/* Header title styling with shadow */
+header h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Header subtitle styling */
+header p {
+    font-size: 1.5em;
+    margin-top: 10px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Layout styling */
+.layout {
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+/* Sidebar styling */
+.sidebar {
+    background-color: #002244;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-right: 20px;
+}
+
+.sidebar h2 {
+    color: #66b3ff;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    color: #66b3ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.sidebar ul li a:hover {
+    color: #ffffff;
+}
+
+/* Main content styling */
+main {
+    flex: 1;
+    padding: 20px;
+    background: #002244;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer styling */
+footer {
+    background-color: #002244;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Image styling */
+.featured-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+
+/* Heading styling */
+h1 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    color: #66b3ff;
+    text-align: left;
+    font-size: 1.8em;
+    margin-bottom: 0.5em;
+}
+
+h3 {
+    color: #ffffff;
+    font-size: 1.5em;
+    margin-bottom: 0.3em;
+}
+
+/* Navigation bar styling */
+nav {
+    background-color:rgba(0, 0, 0, 0.5); /* Dark navy */
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center; /* Center the navigation bar itself */
+    align-items: center;
+    box-shadow: 0 4px 8px  #002244;
+}
+
+nav .menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+nav .menu-toggle .bar {
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    margin: 4px 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center the navigation items */
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #66b3ff;
+}
+
+/* Responsive navigation */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+    nav ul.showing {
+        display: flex;
+    }
+    nav .menu-toggle {
+        display: flex;
+    }
+}
+
+/* Social media links styling */
+.social-media {
+    margin-top: 10px;
+}
+
+.social-media a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #66b3ff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+    color: #ffffff;
+}
+
+/* Quotes section styling */
+.quotes {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background: #003366;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 40px;
+}
+
+.quotes p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #ffffff;
+}
+
+.quotes p:last-child {
+    text-align: right;
+    font-style: italic;
+    color: #99ccff;
+}
+
+/* Carousel container */
+.carousel-container {
+    position: relative;
+    max-width: 600px; /* Set a larger maximum width for the carousel */
+    margin-right: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+/* Hide the images by default */
+.carousel-slide {
+    display: none;
+}
+
+/* Show the first image by default */
+.carousel-slide:first-child {
+    display: block;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 24px; /* Increased font size */
+    transition: background-color 0.3s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Image slide */
+.carousel-slide img {
+    width: 100%;
+    height: auto;
+    max-height: 600px; /* Set a taller maximum height */
+    object-fit: contain; /* Ensure images fit within the container without being squished */
+}
+
+/* General styling for sections */
+section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background: #002244;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+section h2 {
+    margin-bottom: 10px;
+}
+
+section p, section ul {
+    line-height: 1.6;
+    color: #ffffff;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input[type="text"], form input[type="email"], form textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #004080;
+    border-radius: 5px;
+    background: #001f3f;
+    color: #ffffff;
+}
+
+form input[type="submit"] {
+    padding: 10px;
+    background-color: #003366;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #004080;
+}
+
+/* Styling for the sidebar image */
+.sidebar-image {
+    width: 100%;
+    height: auto; /* Set the desired height */
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for columns in the about page */
+.columns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.columns section {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    background: #002244;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Ensure sections don't stretch too much */
+.columns section h2 {
+    color: #66b3ff;
+    margin-bottom: 10px;
+}
+
+.columns section p, .columns section ul, .columns section blockquote {
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Flex container styling for image and text alignment */
+.flex-container {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Adjust the gap between the image and the text as needed */
+}
+
+.flex-container img.featured-image {
+    width: 50%; /* Adjust the width of the image as needed */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.flex-container div {
+    flex: 1;
+}
+/* Popup styling */
+.popup {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.popup-content {
+    background-color: #001f3f;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #004080;
+    width: 20%; /* Could be more or less, depending on screen size */
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.popup-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* General button styling */
+button, input[type="button"] {
+    padding: 10px;
+    background-color: #003366;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Arial', sans-serif; /* Ensure it matches the rest of the text */
+    font-size: 1em; /* Ensure the font size is consistent */
+}
+
+button:hover, input[type="button"]:hover {
+    background-color: #004080;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input[type="text"], form input[type="email"], form textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #004080;
+    border-radius: 5px;
+    background: #001f3f;
+    color: #ffffff;
+}
+
+form input[type="submit"] {
+    padding: 10px;
+    background-color: #003366;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #004080;
+}
+/* Styling for the spanning image */
+.spanning-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 0;
+    box-shadow: none;
+}

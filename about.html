@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="https://refrigerationu.com/" target="_blank">My Work</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+            <li><a href="dnd.html">DND</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>About Me</h1>
+        <p>Curious about my background and experience?</p>
+        <p>Creep</p>
+    </header>
+    <div class="layout">
+        <aside class="sidebar">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="https://refrigerationu.com/" target="_blank">My Work</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="dnd.html">DND</a></li>
+            </ul>
+            <h2>Recent Projects</h2>
+            <ul>
+                <li><a href="https://github.com/Cpt-Ryan/NL-QR-CODER" target="_blank">NL-QR-CODER</a></li>
+                <li><a href="https://github.com/Cpt-Ryan/NL-CAD-PACKET-BUILDER" target="_blank">NL-CAD-PACKET-BUILDER </a></li>
+                <li><a href="https://github.com/Cpt-Ryan/Web-DEV-Practice" target="_blank">WEB-DEV-PRACTICE</a></li>
+            </ul>
+            <img src="images/Rights.gif" alt="Rights GIF" class="sidebar-image">
+        </aside>
+        <main>
+            <section>
+                <h2>Doctrine</h2>
+                <p>"Purge the Heretic with Holy Fire"</p>
+                <img src="images/Elmo.gif" alt="Biography Image" class="spanning-image">
+            </section>
+            <div class="columns">
+                <section>
+                    <h2>Experience</h2>
+                    <p>Over the years, I’ve stumbled my way through various web development projects, pretending to hone my skills in HTML, CSS, and JavaScript. I enjoy taking on new challenges and diving headfirst into the endless abyss of web technologies—because what’s life without a little confusion and chaos? Brace yourself for the amateur hour that is my coding journey!</p>
+                </section>
+                <section>
+                    <h2>Skills</h2>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Responsive Design</li>
+                        <li>Version Control (Git)</li>
+                        <li>Python</li>
+                        <li>Visual Basic</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Testimonials</h2>
+                    <blockquote>
+                        <p>"Working with Jake was a fantastic experience. Their expertise and dedication to web development are evident in every project they undertake." - The Emperor Protects, Client</p>
+                    </blockquote>
+                </section>
+                <section>
+                    <h2>Hobbies</h2>
+                    <p>Halo Lore</p>
+                    <p>Star Wars Lore</p>
+                    <p>... "Cooking" with the special book</p>
+                    <p>Writing IF Then statements</p>
+                    <p>3D Printing</p>
+                    <p>3D Design</p>
+                </section>
+            </div>
+            <section id="contact">
+                <h2>Contact Me</h2>
+                <form id="contactForm" action="submit_page.php" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Your Message"></textarea>
+                    <input type="button" id="submitBtn" value="Submit">
+                </form>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <p>&copy; 2024 Code Monkey</p>
+    </footer>
+
+    <!-- Popup Container -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <img src="images/Think.gif" alt="Popup Image" class="popup-image">
+            <p>Why would I want to talk to you?</p>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
