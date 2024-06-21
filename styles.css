@@ -7,7 +7,7 @@ body, h1, h2, h3, p, ul, li, form, input, textarea, footer {
 
 /* Body styling */
 body {
-    background: #000824; /* Darker navy background */
+    background: #000000; /* Darker navy background #000824; */
     font-family: 'Arial', sans-serif;
     color: #ffffff;
     margin: 0;
@@ -83,7 +83,7 @@ header p {
 main {
     flex: 1;
     padding: 20px;
-    background: #002244;
+    background:#000824;; /*rgba(0, 0, 0, 0.2)*/
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -504,4 +504,49 @@ form input[type="submit"]:hover {
     margin: 0 auto;
     border-radius: 0;
     box-shadow: none;
+}
+/* Responsive design using media queries */
+@media (max-width: 768px) {
+    .carousel-container {
+        max-width: 100%;
+    }
+    
+    .prev, .next {
+        font-size: 18px;
+        padding: 12px;
+    }
+
+    .carousel-slide img {
+        max-height: 300px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+    .carousel-container {
+        max-width: 80%;
+    }
+    
+    .prev, .next {
+        font-size: 20px;
+        padding: 14px;
+    }
+
+    .carousel-slide img {
+        max-height: 500px;
+    }
+}
+
+@media (min-width: 1201px) {
+    .carousel-container {
+        max-width: 60%;
+    }
+    
+    .prev, .next {
+        font-size: 24px;
+        padding: 16px;
+    }
+
+    .carousel-slide img {
+        max-height: 600px;
+    }
 }
