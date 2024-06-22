@@ -1,0 +1,410 @@
+/* Reset default margins and padding */
+body, h1, h2, h3, p, ul, li, form, input, textarea, footer {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    background: #f4f7f6; /* Light gray background */
+    font-family: 'Roboto', sans-serif; /* Modern, clean font */
+    color: #333; /* Darker text color for better readability */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styling */
+header {
+    background: linear-gradient(to bottom right, #003366, #004080); /* Gradient background */
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    margin-top: 60px; /* Space for fixed nav bar */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px; /* Rounded corners */
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* Layout styling */
+.layout {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto; /* Center the layout */
+}
+
+/* Sidebar styling */
+.sidebar {
+    background: #003366;
+    color: white;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-right: 20px;
+    border-radius: 8px; /* Rounded corners */
+}
+
+.sidebar h2 {
+    color: #66b3ff;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    color: #66b3ff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+    color: #ffffff;
+}
+
+.sidebar img.sidebar-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/* Main content styling */
+main {
+    flex: 1;
+    padding: 20px;
+    background: white;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer styling */
+footer {
+    background: #003366;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px; /* Rounded corners */
+    margin-top: 20px;
+}
+
+/* Image styling */
+.featured-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+
+/* Heading styling */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-bottom: 0.5em;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin-bottom: 0.3em;
+}
+
+/* Navigation bar styling */
+nav {
+    background: #003366;
+    color: white;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between; /* Space between items */
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav .menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+nav .menu-toggle .bar {
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    margin: 4px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #66b3ff;
+}
+
+/* Responsive navigation */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+    nav ul.showing {
+        display: flex;
+    }
+    nav .menu-toggle {
+        display: flex;
+    }
+}
+
+/* Social media links styling */
+.social-media {
+    margin-top: 10px;
+}
+
+.social-media a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #66b3ff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+    color: #ffffff;
+}
+
+/* Quotes section styling */
+.quotes {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background: #004080;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 40px;
+}
+
+.quotes p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: white;
+}
+
+.quotes p:last-child {
+    text-align: right;
+    font-style: italic;
+    color: #99ccff;
+}
+
+/* Carousel container */
+.carousel-container {
+    position: relative;
+    max-width: 100%;
+    margin: 20px auto;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px; /* Rounded corners */
+}
+
+/* Hide the images by default */
+.carousel-slide {
+    display: none;
+}
+
+/* Show the first image by default */
+.carousel-slide:first-child {
+    display: block;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    transition: background-color 0.3s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Image slide */
+.carousel-slide img {
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+    object-fit: contain;
+}
+
+/* Responsive design using media queries */
+@media (max-width: 768px) {
+    .carousel-container {
+        max-width: 100%;
+    }
+    
+    .prev, .next {
+        font-size: 18px;
+        padding: 12px;
+    }
+
+    .carousel-slide img {
+        max-height: 300px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+    .carousel-container {
+        max-width: 80%;
+    }
+    
+    .prev, .next {
+        font-size: 20px;
+        padding: 14px;
+    }
+
+    .carousel-slide img {
+        max-height: 500px;
+    }
+}
+
+@media (min-width: 1201px) {
+    .carousel-container {
+        max-width: 60%;
+    }
+    
+    .prev, .next {
+        font-size: 24px;
+        padding: 16px;
+    }
+
+    .carousel-slide img {
+        max-height: 600px;
+    }
+}
+
+/* General styling for sections */
+section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background: white;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+section h2 {
+    margin-bottom: 10px;
+}
+
+section p, section ul {
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input[type="text"], form input[type="email"], form textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #f4f7f6;
+    color: #333;
+}
+
+form input[type="submit"], form input[type="button"] {
+    padding: 10px;
+    background-color: #003366;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover, form input[type="button"]:hover {
+    background-color: #004080;
+}
+
+/* Flex container styling for image and text alignment */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.flex-container img.featured-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.flex-container div {
+    flex: 1;
+}

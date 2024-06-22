@@ -1,5 +1,5 @@
 /* Inherit the base styles from styles.css */
-@import url('styles.css');
+@import url('modernstyle.css');
 
 /* Additional styling for the DND page */
 .carousel-container {
